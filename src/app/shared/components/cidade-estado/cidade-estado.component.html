@@ -1,0 +1,15 @@
+<dx-form >
+  <dxi-item itemType="group" colCount="2">
+    <dxi-item [label]="{text: 'Estado'}" template="estadoTemplate"></dxi-item>
+    <dxi-item [label]="{text: 'Cidade'}" template="cidadeTemplate"></dxi-item>
+  </dxi-item>
+  <div *dxTemplate="let data of 'estadoTemplate'">
+    <dx-select-box>
+    </dx-select-box>
+  </div>
+  <div *dxTemplate="let data of 'cidadeTemplate'">
+    <dx-select-box>
+    </dx-select-box>
+  </div>
+
+</dx-form>
