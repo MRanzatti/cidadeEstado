@@ -19,6 +19,7 @@ import {ProfileComponent} from './pages/profile/profile.component';
 import {TasksComponent} from './pages/tasks/tasks.component';
 import {ShowComponent} from './pages/show/show.component';
 import {DxDataGridModule, DxFormModule} from 'devextreme-angular';
+import {HttpClientModule} from '@angular/common/http';
 
 @NgModule({
   declarations: [

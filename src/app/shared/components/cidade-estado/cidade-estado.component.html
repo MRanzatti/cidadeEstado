@@ -4,13 +4,20 @@
     <dxi-item [label]="{text: 'Cidade'}" template="cidadeTemplate"></dxi-item>
   </dxi-item>
   <div *dxTemplate="let data of 'estadoTemplate'">
-    <dx-select-box>
-      placeholder:"Selecione o Estado",
+    <dx-select-box
+      [dataSource]="listaUfs"
+      showClearButton=true
+      placeholder="Selecione o Estado"
+      displayExpr="nome"
+    (valueChange)="getEstado($event)" >
     </dx-select-box>
   </div>
   <div *dxTemplate="let data of 'cidadeTemplate'">
-    <dx-select-box>
-      placeholder:"Selecione o Cidade"
+    <dx-select-box
+      [dataSource]="listaMunicipios"
+      placeholder="Selecione a Cidade"
+      displayExpr="nome"
+      showClearButton=true>
     </dx-select-box>
   </div>
 
